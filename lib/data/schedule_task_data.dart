@@ -1,4 +1,4 @@
-import 'package:fitness_dashboard_ui/model/schedule_model.dart';
+import 'package:ASEAN_MRC_2024/model/schedule_model.dart';
 
 class ScheduleTasksData {
   final scheduled = const [

@@ -1,8 +1,9 @@
-import 'package:fitness_dashboard_ui/const/constant.dart';
-import 'package:fitness_dashboard_ui/data/line_chart_data.dart';
-import 'package:fitness_dashboard_ui/widgets/custom_card_widget.dart';
+import 'package:ASEAN_MRC_2024/const/constant.dart';
+import 'package:ASEAN_MRC_2024/data/line_chart_data.dart';
+import 'package:ASEAN_MRC_2024/widgets/custom_card_widget.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class LineChartCard extends StatelessWidget {
   const LineChartCard({super.key});
@@ -16,12 +17,12 @@ class LineChartCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Steps Overview",
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+            "River Level Overview",
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
           ),
           const SizedBox(height: 20),
           AspectRatio(
-            aspectRatio: 16 / 6,
+            aspectRatio: 16 / 5,
             child: LineChart(
               LineChartData(
                 lineTouchData: LineTouchData(
@@ -45,7 +46,7 @@ class LineChartCard extends StatelessWidget {
                                 child: Text(
                                     data.bottomTitle[value.toInt()].toString(),
                                     style: TextStyle(
-                                        fontSize: 12, color: Colors.grey[400])),
+                                        fontSize: 10, color: Colors.grey[400])),
                               )
                             : const SizedBox();
                       },
@@ -57,7 +58,7 @@ class LineChartCard extends StatelessWidget {
                         return data.leftTitle[value.toInt()] != null
                             ? Text(data.leftTitle[value.toInt()].toString(),
                                 style: TextStyle(
-                                    fontSize: 12, color: Colors.grey[400]))
+                                    fontSize: 16, color: Colors.grey[400]))
                             : const SizedBox();
                       },
                       showTitles: true,
@@ -89,7 +90,7 @@ class LineChartCard extends StatelessWidget {
                 minX: 0,
                 maxX: 120,
                 maxY: 105,
-                minY: -5,
+                minY: 0,
               ),
             ),
           ),

@@ -1,4 +1,4 @@
-name: fitness_dashboard_ui
+name: ASEAN_MRC_2024
 description: "A new Flutter project."
 
 publish_to: 'none'
@@ -11,7 +11,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
   cupertino_icons: ^1.0.2
   fl_chart: ^0.62.0
   flutter_svg: ^2.0.5
@@ -27,4 +26,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
-    - assets/icons/  
+    - assets/icons/

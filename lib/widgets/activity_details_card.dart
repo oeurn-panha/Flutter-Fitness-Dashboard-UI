@@ -1,6 +1,6 @@
-import 'package:fitness_dashboard_ui/data/health_details.dart';
-import 'package:fitness_dashboard_ui/util/responsive.dart';
-import 'package:fitness_dashboard_ui/widgets/custom_card_widget.dart';
+import 'package:ASEAN_MRC_2024/data/health_details.dart';
+import 'package:ASEAN_MRC_2024/util/responsive.dart';
+import 'package:ASEAN_MRC_2024/widgets/custom_card_widget.dart';
 import 'package:flutter/material.dart';
 
 class ActivityDetailsCard extends StatelessWidget {

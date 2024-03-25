@@ -1,5 +1,5 @@
-import 'package:fitness_dashboard_ui/model/bar_graph_model.dart';
-import 'package:fitness_dashboard_ui/model/graph_model.dart';
+import 'package:ASEAN_MRC_2024/model/bar_graph_model.dart';
+import 'package:ASEAN_MRC_2024/model/graph_model.dart';
 import 'package:flutter/material.dart';
 
 class BarGraphData {
@@ -8,7 +8,7 @@ class BarGraphData {
         label: "Activity Level",
         color: Color(0xFFFEB95A),
         graph: [
-          GraphModel(x: 0, y: 8),
+          GraphModel(x: 0, y: 7),
           GraphModel(x: 1, y: 10),
           GraphModel(x: 2, y: 7),
           GraphModel(x: 3, y: 4),

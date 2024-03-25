@@ -1,9 +1,10 @@
-import 'package:fitness_dashboard_ui/util/responsive.dart';
-import 'package:fitness_dashboard_ui/widgets/dashboard_widget.dart';
-import 'package:fitness_dashboard_ui/widgets/side_menu_widget.dart';
-import 'package:fitness_dashboard_ui/widgets/summary_widget.dart';
+import 'package:ASEAN_MRC_2024/util/responsive.dart';
+import 'package:ASEAN_MRC_2024/widgets/dashboard_widget.dart';
+import 'package:ASEAN_MRC_2024/widgets/side_menu_widget.dart';
+import 'package:ASEAN_MRC_2024/widgets/summary_widget.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter/widgets.dart';
+ 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
@@ -20,7 +21,7 @@ class MainScreen extends StatelessWidget {
           : null,
       endDrawer: Responsive.isMobile(context)
           ? SizedBox(
-              width: MediaQuery.of(context).size.width * 0.8,
+              width: MediaQuery.of(context).size.width * 0.5,
               child: const SummaryWidget(),
             )
           : null,
@@ -37,7 +38,7 @@ class MainScreen extends StatelessWidget {
             Expanded(
               flex: 7,
               child: DashboardWidget(),
-            ),
+              ),
             if (isDesktop)
               Expanded(
                 flex: 3,

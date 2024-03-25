@@ -1,5 +1,5 @@
-import 'package:fitness_dashboard_ui/const/constant.dart';
-import 'package:fitness_dashboard_ui/data/side_menu_data.dart';
+import 'package:ASEAN_MRC_2024/const/constant.dart';
+import 'package:ASEAN_MRC_2024/data/side_menu_data.dart';
 import 'package:flutter/material.dart';
 
 class SideMenuWidget extends StatefulWidget {
@@ -17,7 +17,7 @@ class _SideMenuWidgetState extends State<SideMenuWidget> {
     final data = SideMenuData();
 
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 20),
+      padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
       color: const Color(0xFF171821),
       child: ListView.builder(
         itemCount: data.menu.length,
