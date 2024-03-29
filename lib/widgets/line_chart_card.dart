@@ -36,17 +36,25 @@ class LineChartCard extends StatelessWidget {
                   topTitles: AxisTitles(
                     sideTitles: SideTitles(showTitles: false),
                   ),
-                  bottomTitles: AxisTitles(
+                 bottomTitles: AxisTitles(
                     sideTitles: SideTitles(
                       showTitles: true,
+                      reservedSize: 40,
                       getTitlesWidget: (double value, TitleMeta meta) {
                         return data.bottomTitle[value.toInt()] != null
                             ? SideTitleWidget(
                                 axisSide: meta.axisSide,
-                                child: Text(
+                                child: Padding(
+                                  // Adjust the padding here
+                                  padding: EdgeInsets.only(bottom: 0), // Adjust bottom padding as needed
+                                  child: Text(
                                     data.bottomTitle[value.toInt()].toString(),
                                     style: TextStyle(
-                                        fontSize: 10, color: Colors.grey[400])),
+                                      fontSize: 16,
+                                      color: Colors.grey[400],
+                                    ),
+                                  ),
+                                ),
                               )
                             : const SizedBox();
                       },
@@ -63,7 +71,7 @@ class LineChartCard extends StatelessWidget {
                       },
                       showTitles: true,
                       interval: 1,
-                      reservedSize: 40,
+                      reservedSize: 40, //bottom space
                     ),
                   ),
                 ),

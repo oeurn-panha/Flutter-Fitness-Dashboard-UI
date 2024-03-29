@@ -17,7 +17,7 @@ class _SideMenuWidgetState extends State<SideMenuWidget> {
     final data = SideMenuData();
 
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
       color: const Color(0xFF171821),
       child: ListView.builder(
         itemCount: data.menu.length,
@@ -30,7 +30,7 @@ class _SideMenuWidgetState extends State<SideMenuWidget> {
     final isSelected = selectedIndex == index;
 
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 5),
+      margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
       decoration: BoxDecoration(
         borderRadius: const BorderRadius.all(
           Radius.circular(6.0),
