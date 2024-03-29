@@ -39,7 +39,7 @@ class LineChartCard extends StatelessWidget {
                  bottomTitles: AxisTitles(
                     sideTitles: SideTitles(
                       showTitles: true,
-                      reservedSize: 40,
+                      reservedSize: 40,//bottom space
                       getTitlesWidget: (double value, TitleMeta meta) {
                         return data.bottomTitle[value.toInt()] != null
                             ? SideTitleWidget(
@@ -71,7 +71,7 @@ class LineChartCard extends StatelessWidget {
                       },
                       showTitles: true,
                       interval: 1,
-                      reservedSize: 40, //bottom space
+                      reservedSize: 40, 
                     ),
                   ),
                 ),

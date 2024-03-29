@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: backgroundColor,
         brightness: Brightness.dark,
       ),
-      home: const MainScreen(),
+      title: 'ASEAN-MRC',
+      home: const MainScreen(), 
     );
   }
 }

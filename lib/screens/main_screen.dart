@@ -36,12 +36,12 @@ class MainScreen extends StatelessWidget {
                 ),
               ),
             Expanded(
-              flex: 7,
+              flex: 8,
               child: DashboardWidget(),
               ),
             if (isDesktop)
               Expanded(
-                flex: 3,
+                flex: 2,
                 child: SummaryWidget(),
               ),
           ],
